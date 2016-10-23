@@ -1,0 +1,27 @@
+{
+  "name": "edinburgh.dog",
+  "homepage": "edinburgh.dog",
+  "authors": [
+    "Keir Mcluskey keir.mcluskey@hotmail.co.uk"
+  ],
+  "description": "dog walking site",
+  "main": "_layouts/default.html",
+  "keywords": [
+    "dog",
+    "walking"
+  ],
+  "license": "Private",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.5",
+    "bower": "*",
+    "install": "^1.0.4"
+  }
+}
