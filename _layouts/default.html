@@ -21,13 +21,18 @@
 
   </head>
   <body style='height: 100%'>
-
+    {% include header.html %}
     {% include navigation.md %}
-    {{ content }}
+    
+    <div class="container">
+        {{ content }}
+    </div>
+    
     {% include footer.md %}
     
     <script src="/vendor/js/jquery.min.js"></script>
     <script src="/vendor/js/tether.min.js"></script>
     <script src="/vendor/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src=/js/scripts.js></script>
   </body>
 </html>

@@ -37,3 +37,30 @@ $on-laptop:        800px;
 
 // Import partials from the `minima` theme.
 @import "minima";
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar .nav-item {
+	padding: 0px 20px 0px 20px
+}
+
+.container.header {
+	text-align: center;
+	padding-top: 10px;
+}
+
+.header img {
+	width: 50%;
+}
+
+.navbar {
+	text-align: center;
+}

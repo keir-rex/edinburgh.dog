@@ -2,5 +2,6 @@
 layout: default
 title:  "pricing"
 permalink: /pricing/
+group: "navigation"
 ---
-# Some content
+# Some Pricing Content

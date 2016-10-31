@@ -2,5 +2,6 @@
 layout: default
 title:  "gallery"
 permalink: /gallery/
+group: "navigation"
 ---
-# Some content
+# Some Gallery content
