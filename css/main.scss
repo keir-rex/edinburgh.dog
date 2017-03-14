@@ -38,6 +38,11 @@ $on-laptop:        800px;
 // Import partials from the `minima` theme.
 @import "minima";
 
+.navbar .navbar-underline {
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+}
+
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
