@@ -24,3 +24,4 @@ gem "minima"
 # end
 gem "jekyll-gallery-generator"
 gem 'rake', '~> 11.3.0'
+gem 's3_website', '~> 2.16.0'
