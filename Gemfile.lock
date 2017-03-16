@@ -1,6 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.5.0)
+      public_suffix (~> 2.0, >= 2.0.2)
     aws-sdk (2.8.7)
       aws-sdk-resources (= 2.8.7)
     aws-sdk-core (2.8.7)
@@ -17,9 +19,10 @@ GEM
     deep_merge (1.0.1)
     dotenv (1.0.2)
     exifr (1.2.5)
-    ffi (1.9.17)
+    ffi (1.9.18)
     forwardable-extended (2.6.0)
-    jekyll (3.2.1)
+    jekyll (3.3.1)
+      addressable (~> 2.4)
       colorator (~> 1.0)
       jekyll-sass-converter (~> 1.0)
       jekyll-watch (~> 1.1)
@@ -29,6 +32,8 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
+    jekyll-feed (0.8.0)
+      jekyll (~> 3.3)
     jekyll-gallery-generator (1.1.0)
       exifr (~> 1.2)
       rmagick (~> 2.12)
@@ -46,6 +51,7 @@ GEM
     minima (2.0.0)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
+    public_suffix (2.0.5)
     rake (11.3.0)
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
@@ -65,7 +71,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (= 3.2.1)
+  jekyll (= 3.3.1)
+  jekyll-feed (~> 0.8.0)
   jekyll-gallery-generator
   minima
   rake (~> 11.3.0)

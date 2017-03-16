@@ -23,6 +23,7 @@ url: "https://edinburgh.dog" # the base hostname & protocol for your site
 assets_dir: assets
 banner: /assets/banner_large.png
 favicon_dir: https://edinburgh.dog/assests/favicon
+timezone: GMT
 
 twitter_username: Edinburgh.Dog
 github_username:  keir-rex
@@ -39,6 +40,10 @@ theme: minima
 
 gems:
 - jekyll-gallery-generator
+- jekyll-feed
+
+sass:
+  style: compressed
 
 exclude:
   - "bower_components"
