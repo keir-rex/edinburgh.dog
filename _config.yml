@@ -22,7 +22,7 @@ keywords: Edinburgh, Dog, Walking, Pet, Pet Services, Dog Walking, Dog Boarding,
 url: "https://edinburgh.dog" # the base hostname & protocol for your site
 assets_dir: assets
 banner: /assets/banner_large.png
-favicon_dir: https://edinburgh.dog/assests/favicon
+favicon_dir: /assests/favicon
 timezone: GMT
 
 twitter_username: Edinburgh.Dog
@@ -46,6 +46,7 @@ sass:
   style: compressed
 
 exclude:
+  - "vendor"
   - "bower_components"
   - "bower.json"
   - "Gruntfile.coffee"
