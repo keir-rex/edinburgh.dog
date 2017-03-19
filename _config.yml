@@ -25,8 +25,13 @@ banner: /assets/banner_large.png
 favicon_dir: /assests/favicon
 timezone: GMT
 
-twitter_username: Edinburgh.Dog
+# social
+telephone_number: 07490644931
+twitter_username: EdDogWalking
 github_username:  keir-rex
+instagram: Edinburgh.Dog
+facebook: Edinburgh.Dog
+email: walking@edinburgh.dog
 
 source:      .
 include: [_pages]
@@ -54,3 +59,4 @@ exclude:
   - "Gemfile*"
   - "package.json"
   - "README.md"
+  - "Rakefile"
