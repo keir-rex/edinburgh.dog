@@ -4,8 +4,6 @@ title:  "pricing"
 permalink: /pricing/
 group: "navigation"
 ---
-# Pricing
-
 ## Daytime (9AM to 5PM)
 
 - £10 per dog per hour

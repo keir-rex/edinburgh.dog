@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Doge Gallery"
-permalink: /gallery/
+permalink: /contact/
 group: "navigation"
 ---
  
