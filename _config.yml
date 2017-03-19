@@ -17,11 +17,14 @@ title: Dog Walking - Boarding - Pet Services - Edinburgh | Edinburgh.dog
 email: walking@edinburgh.dog
 description: Edinburgh Dog Walking and Pet Services is a local family business providing care to your dogs and other pets.
 keywords: Edinburgh, Dog, Walking, Pet, Pet Services, Dog Walking, Dog Boarding, Daycare, Day Care, Dog Daycare
-
-banner: /assets/banner_large.png
 #baseurl: "" # the subpath of your site, e.g. /blog
 
 url: "https://edinburgh.dog" # the base hostname & protocol for your site
+assets_dir: assets
+banner: /assets/banner_large.png
+favicon_dir: /assests/favicon
+timezone: GMT
+
 twitter_username: Edinburgh.Dog
 github_username:  keir-rex
 
@@ -35,7 +38,15 @@ layouts_dir: ./_layouts
 markdown: kramdown
 theme: minima
 
+gems:
+- jekyll-gallery-generator
+- jekyll-feed
+
+sass:
+  style: compressed
+
 exclude:
+  - "vendor"
   - "bower_components"
   - "bower.json"
   - "Gruntfile.coffee"
