@@ -17,45 +17,45 @@ module.exports = (grunt) ->
           expand: true
           cwd: "bower_components/jquery/dist/"
           src: "jquery.min.js"
-          dest: "vendor/js/"
+          dest: "3rdparty/js/"
         }]
       bootstrap:
         files: [{
           expand: true
           cwd: "bower_components/bootstrap/dist/css/"
           src: "bootstrap.min.css"
-          dest: "vendor/css/"
+          dest: "3rdparty/css/"
         },
         {
           expand: true
           cwd: "bower_components/bootstrap/dist/js/"
           src: "bootstrap.min.js"
-          dest: "vendor/js/"
+          dest: "3rdparty/js/"
         }]
       tether:
         files: [{
           expand: true
           cwd: "bower_components/tether/dist/css/"
           src: "tether.min.css"
-          dest: "vendor/css/"
+          dest: "3rdparty/css/"
         },
         {
           expand: true
           cwd: "bower_components/tether/dist/js/"
           src: "tether.min.js"
-          dest: "vendor/js/"
+          dest: "3rdparty/js/"
         }]
       font_awesome:
         files: [{
           expand: true
           cwd: "bower_components/font-awesome/css/"
           src: "font-awesome.min.css"
-          dest: "vendor/css/"
+          dest: "3rdparty/css/"
         },{
           expand: true
           cwd: "bower_components/font-awesome/fonts/"
           src: "*"
-          dest: "vendor/fonts/"
+          dest: "3rdparty/fonts/"
         }]
 
     exec:
