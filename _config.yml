@@ -28,10 +28,10 @@ timezone: GMT
 # social
 telephone_number: 07490644931
 twitter_username: EdDogWalking
-github_username:  keir-rex
+email: Walking@Edinburgh.Dog
 instagram: Edinburgh.Dog
 facebook: Edinburgh.Dog
-email: walking@edinburgh.dog
+github_username:  keir-rex
 
 source:      .
 include: [_pages]
