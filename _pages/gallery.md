@@ -1,9 +1,7 @@
 ---
 layout: default
-title:  "gallery"
+title:  "Doge Gallery"
 permalink: /gallery/
 group: "navigation"
 ---
-# The doge gallery
-
  
