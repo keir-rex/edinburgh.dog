@@ -5,9 +5,8 @@ permalink: /contact/
 group: "navigation"
 ---
  
- <center>This text is centered.  And clean.  Amen.</center>
- <center>
- {% markdown %}
+<center>
+{% markdown %}
 |:----:|:--------------:|
 |Email:| [{{site.email}}](mailto:{{site.email}})|
 
