@@ -5,7 +5,8 @@ permalink: /contact/
 group: "navigation"
 ---
  
- <div class="centered">
+ <center>This text is centered.  And clean.  Amen.</center>
+ <center>
  {% markdown %}
 |:----:|:--------------:|
 |Email:| [{{site.email}}](mailto:{{site.email}})|
@@ -14,8 +15,8 @@ group: "navigation"
 
 |Facebook:| [{{site.facebook}}](https://facebook.com/{{site.facebook}})|
 
-|Twitter:| [{{site.twitter}}](https://twitter.com/{{site.twitter_username}})|
+|Twitter:| [@{{site.twitter_username}}](https://twitter.com/{{site.twitter_username}})|
 
 |Instagram:| [{{site.instagram}}](https://instagram.com/{{site.instagram}})|
 {% endmarkdown %}
-</div>
+</center>
