@@ -38,19 +38,85 @@ $on-laptop:        800px;
 // Import partials from the `minima` theme.
 @import "minima";
 
-.navbar .navbar-underline {
-    border-style: solid;
-    border-width: 0px 0px 1px 0px;
-}
-
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
   vertical-align: top;
 }
 
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .navbar .navbar-underline {
+    border-style: none;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 990px) {
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: right;
+    clear: both;
+    vertical-align: top;
+  }
+  .navbar .navbar-underline {
+      border-style: solid;
+      border-color: rgba(0,0,0,.1);
+      border-width: 1px 1px 1px 1px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: right;
+    clear: both;
+    vertical-align: top;
+  }
+  .navbar .navbar-underline {
+    border-style: solid;
+    border-color: rgba(0,0,0,.1);
+    border-width: 1px 1px 1px 1px;
+  }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: right;
+    clear: both;
+    vertical-align: top;
+  }
+  .navbar .navbar-underline {
+    border-style: solid;
+    border-color: rgba(0,0,0,.1);
+    border-width: 1px 1px 1px 1px;
+  }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: right;
+    clear: both;
+    vertical-align: top;
+  }
+  .navbar .navbar-underline {
+    border-style: solid;
+    border-color: rgba(0,0,0,.1);
+    border-width: 1px 1px 1px 1px;
+  }  
+}
+
 .navbar .navbar-collapse {
   text-align: center;
+}
+
+.collapsing {
+  clear: both;
 }
 
 .navbar .nav-item {
@@ -72,4 +138,40 @@ $on-laptop:        800px;
 
 .centered {
   text-align: center;
+}
+
+a.btn.btn-social.btn-twitter,
+a.btn.btn-social.btn-facebook,
+a.btn.btn-social.btn-instagram {
+  color: rgb(135, 133, 138);
+}
+
+a.btn.btn-social.btn-twitter:hover,
+a.btn.btn-social.btn-facebook:hover,
+a.btn.btn-social.btn-instagram:hover {
+  color: rgb(0, 0, 0);
+}
+
+a.btn.btn-social.btn-twitter:active,
+a.btn.btn-social.btn-facebook:active,
+a.btn.btn-social.btn-instagram:active {
+  color: rgb(23, 86, 169);
+}
+
+a.btn.btn-social.btn-twitter:visited,
+a.btn.btn-social.btn-facebook:visited,
+a.btn.btn-social.btn-instagram:visited {
+  color: rgb(0, 0, 0);
+}
+
+.btn-social {
+  color: rgb(135 ,133, 138);
+}
+
+.footer .btn-social a:visited {
+  color: rgb(0, 0, 0);
+}
+
+a:visited {
+  color: rgb(0, 0, 0);
 }
