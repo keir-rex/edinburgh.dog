@@ -60,3 +60,5 @@ exclude:
   - "package.json"
   - "README.md"
   - "Rakefile"
+  - "s3_website.yml"
+  - "cloudformation.yml"
