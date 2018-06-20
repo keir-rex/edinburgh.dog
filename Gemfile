@@ -22,7 +22,6 @@ gem "minima"
 # group :jekyll_plugins do
 #   gem "jekyll-github-metadata", "~> 1.0"
 # end
-# gem "jekyll-gallery-generator"
 gem 'rake', '~> 11.3.0'
 gem 's3_website', '~> 2.16.0'
 gem 'jekyll-feed', '~> 0.8.0'

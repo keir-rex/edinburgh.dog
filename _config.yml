@@ -13,13 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Dog Walking - Boarding - Pet Services - Edinburgh | Edinburgh.dog
-email: walking@edinburgh.dog
+title: Paw Patrollers | Edinburgh Dog Walking &amp; Pet Services
+email: walking@PawPatrollers.dog
 description: Edinburgh Dog Walking and Pet Services is a local family business providing care to your dogs and other pets.
 keywords: Edinburgh, Dog, Walking, Pet, Pet Services, Dog Walking, Dog Boarding, Daycare, Day Care, Dog Daycare
 #baseurl: "" # the subpath of your site, e.g. /blog
 
-url: "https://edinburgh.dog" # the base hostname & protocol for your site
+url: "https://PawPatrollers.dog" # the base hostname & protocol for your site
 assets_dir: assets
 banner: /assets/banner_large.png
 favicon_dir: /assests/favicon
@@ -28,10 +28,10 @@ timezone: GMT
 # social
 telephone_number: 07490644931
 twitter_username: EdDogWalking
-email: Walking@Edinburgh.Dog
-instagram: Edinburgh.Dog
-facebook: Edinburgh.Dog
-github_username:  keir-rex
+email: Walking@PawPatrollers.Dog
+instagram: PawPatrollers.Dog
+facebook: PawPatrollers.Dog
+github_username: keir-rex
 
 source:      .
 include: [_pages]
@@ -51,7 +51,7 @@ sass:
 
 exclude:
   - "vendor"
-  - "bower_components"
+  # - "bower_components"
   - "bower.json"
   - "Gruntfile.coffee"
   - "node_modules"
