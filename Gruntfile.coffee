@@ -19,48 +19,44 @@ module.exports = (grunt) ->
           src: "jquery.min.js"
           dest: "3rdparty/js/"
         }]
-      bootstrap:
+      eventEmitter:
         files: [{
           expand: true
-          cwd: "bower_components/bootstrap/dist/css/"
-          src: "bootstrap.min.css"
-          dest: "3rdparty/css/"
-        },
-        {
-          expand: true
-          cwd: "bower_components/bootstrap/dist/js/"
-          src: "bootstrap.min.js"
+          cwd: "bower_components/eventEmitter/"
+          src: "EventEmitter.js"
           dest: "3rdparty/js/"
         }]
-      tether:
+      eventie:
         files: [{
           expand: true
-          cwd: "bower_components/tether/dist/css/"
-          src: "tether.min.css"
-          dest: "3rdparty/css/"
-        },
-        {
-          expand: true
-          cwd: "bower_components/tether/dist/js/"
-          src: "tether.min.js"
+          cwd: "bower_components/eventie/"
+          src: "eventie.js"
           dest: "3rdparty/js/"
         }]
-      font_awesome:
+      imagesloaded:
         files: [{
           expand: true
-          cwd: "bower_components/font-awesome/css/"
-          src: "font-awesome.min.css"
-          dest: "3rdparty/css/"
-        },{
-          expand: true
-          cwd: "bower_components/font-awesome/fonts/"
-          src: "*"
-          dest: "3rdparty/fonts/"
+          cwd: "bower_components/imagesloaded/"
+          src: "imagesloaded.js"
+          dest: "3rdparty/js/"
         }]
-
+      enquire:
+        files: [{
+          expand: true
+          cwd: "bower_components/enquire/dist/"
+          src: "enquire.min.js"
+          dest: "3rdparty/js/"
+        }]
+      skrollr:
+        files: [{
+          expand: true
+          cwd: "bower_components/skrollr/dist/"
+          src: "skrollr.min.js"
+          dest: "3rdparty/js/"
+        }]
     exec:
       jekyll:
-        cmd: "jekyll build --trace"
+        cmd: "bundle exec jekyll build --trace"
 
     watch:
       options:

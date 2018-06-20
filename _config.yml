@@ -22,7 +22,7 @@ keywords: Edinburgh, Dog, Walking, Pet, Pet Services, Dog Walking, Dog Boarding,
 url: "https://PawPatrollers.dog" # the base hostname & protocol for your site
 assets_dir: assets
 banner: /assets/banner_large.png
-favicon_dir: /assests/favicon
+favicon_dir: /assets/favicon
 timezone: GMT
 
 # social
@@ -43,7 +43,7 @@ layouts_dir: ./_layouts
 markdown: kramdown
 theme: minima
 
-gems:
+plugins:
 - jekyll-feed
 
 sass:
@@ -51,7 +51,7 @@ sass:
 
 exclude:
   - "vendor"
-  # - "bower_components"
+  - "bower_components"
   - "bower.json"
   - "Gruntfile.coffee"
   - "node_modules"
