@@ -54,6 +54,27 @@ module.exports = (grunt) ->
           src: "skrollr.min.js"
           dest: "3rdparty/js/"
         }]
+      modernizr:
+        files: [{
+          expand: true
+          cwd: "bower_components/modernizr/"
+          src: "modernizr.js"
+          dest: "3rdparty/js/"
+        }]
+      normalize:
+        files: [{
+          expand: true
+          cwd: "bower_components/normalize.css/"
+          src: "normalize.css"
+          dest: "3rdparty/css/"
+        }]
+      favicon:
+        files: [{
+          expand: true
+          cwd: "favicons/"
+          src: "*"
+          dest: ""
+        }]
     exec:
       jekyll:
         cmd: "jekyll build --trace"

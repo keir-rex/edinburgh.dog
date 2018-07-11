@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Paw Patrollers | Edinburgh Dog Walking &amp; Pet Services
-email: walking@PawPatrollers.dog
+email: Derek@PawPatrollers.dog
 description: Edinburgh Dog Walking and Pet Services is a local family business providing care to your dogs and other pets.
 keywords: Edinburgh, Dog, Walking, Pet, Pet Services, Dog Walking, Dog Boarding, Daycare, Day Care, Dog Daycare
 #baseurl: "" # the subpath of your site, e.g. /blog
@@ -24,6 +24,7 @@ assets_dir: assets
 banner: /assets/banner_large.png
 favicon_dir: /assets/favicon
 timezone: GMT
+app-name: Paw Patrollers - Edinburgh Dog Walking
 
 # social
 telephone_number: 07490644931
@@ -33,7 +34,7 @@ instagram: PawPatrollers.Dog
 facebook: PawPatrollers.Dog
 github_username: keir-rex
 
-source:      .
+source: .
 include: [_pages]
 destination: ./_site
 plugins_dir: ./_plugins
