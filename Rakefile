@@ -1,6 +1,5 @@
 task :default => :watch
 
-
 desc 'Cleanup generated files'
 task :clean do
   sh 'rm -rf _site'

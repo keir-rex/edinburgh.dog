@@ -22,7 +22,7 @@ keywords: Edinburgh, Dog, Walking, Pet, Pet Services, Dog Walking, Dog Boarding,
 url: "https://PawPatrollers.dog" # the base hostname & protocol for your site
 assets_dir: assets
 banner: /assets/banner_large.png
-favicon_dir: /assets/favicon
+favicon_dir: /favicons
 timezone: GMT
 app-name: Paw Patrollers - Edinburgh Dog Walking
 

@@ -1,5 +1,3 @@
-#global module:false
-
 "use strict"
 
 module.exports = (grunt) ->
@@ -17,63 +15,56 @@ module.exports = (grunt) ->
           expand: true
           cwd: "bower_components/jquery/dist/"
           src: "jquery.min.js"
-          dest: "_site/3rdparty/js/"
+          dest: "3rdparty/js/"
         }]
       eventEmitter:
         files: [{
           expand: true
           cwd: "bower_components/eventEmitter/"
           src: "EventEmitter.js"
-          dest: "_site/3rdparty/js/"
+          dest: "3rdparty/js/"
         }]
       eventie:
         files: [{
           expand: true
           cwd: "bower_components/eventie/"
           src: "eventie.js"
-          dest: "_site/3rdparty/js/"
+          dest: "3rdparty/js/"
         }]
       imagesloaded:
         files: [{
           expand: true
           cwd: "bower_components/imagesloaded/"
           src: "imagesloaded.js"
-          dest: "_site/3rdparty/js/"
+          dest: "3rdparty/js/"
         }]
       enquire:
         files: [{
           expand: true
           cwd: "bower_components/enquire/dist/"
           src: "enquire.min.js"
-          dest: "_site/3rdparty/js/"
+          dest: "3rdparty/js/"
         }]
       skrollr:
         files: [{
           expand: true
           cwd: "bower_components/skrollr/dist/"
           src: "skrollr.min.js"
-          dest: "_site/3rdparty/js/"
+          dest: "3rdparty/js/"
         }]
       modernizr:
         files: [{
           expand: true
           cwd: "bower_components/modernizr/"
           src: "modernizr.js"
-          dest: "_site/3rdparty/js/"
+          dest: "3rdparty/js/"
         }]
       normalize:
         files: [{
           expand: true
           cwd: "bower_components/normalize.css/"
           src: "normalize.css"
-          dest: "_site/3rdparty/css/"
-        }]
-      favicon:
-        files: [{
-          expand: true
-          cwd: "favicons/"
-          src: "*"
-          dest: "_site/"
+          dest: "3rdparty/css/"
         }]
     exec:
       jekyll:
@@ -104,6 +95,7 @@ module.exports = (grunt) ->
           port: 4000
           base: '_site'
           livereload: true
+
 
   grunt.registerTask "build", [
     "copy"
