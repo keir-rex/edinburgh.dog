@@ -2,11 +2,12 @@ task :default => :watch
 
 desc 'Cleanup generated files'
 task :clean do
-  sh 'rm -rf _site'
+  sh 'rm -rf _site 3rdparty'
 end
 
 desc 'Build the site'
 task build: [:clean] do
+  sh 'grunt copy'
   jekyll :build
 end
 

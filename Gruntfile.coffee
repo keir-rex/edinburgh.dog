@@ -66,6 +66,13 @@ module.exports = (grunt) ->
           src: "normalize.css"
           dest: "3rdparty/css/"
         }]
+      favicons:
+        files: [{
+          expand: true
+          cwd: "favicons/"
+          src: "*"
+          dest: "_site/"
+        }]
     exec:
       jekyll:
         cmd: "jekyll build --trace"
@@ -100,6 +107,7 @@ module.exports = (grunt) ->
   grunt.registerTask "build", [
     "copy"
     "exec:jekyll"
+    "copy:favicons"
   ]
 
   grunt.registerTask "serve", [

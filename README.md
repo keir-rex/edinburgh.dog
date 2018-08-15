@@ -10,10 +10,11 @@ Requires: NodeJS, NPM, Ruby
 
 ### Local Dependancies
 `npm install .`
+`bundle install -g grunt`
+`bundle install .`
 `bower install`
 
 ## Build
-`grunt copy`
 `bundle exec rake build`
 
 ## Develop
