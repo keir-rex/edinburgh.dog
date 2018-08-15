@@ -1,7 +1,11 @@
 language: ruby
 branches:
   only: master
-script: bundle exec rake deploy
+install:
+  - bundle install
+  - npm install
+  - bower install
+script: bundle exec rake build
 cache: bundler
 env:
   global: 
