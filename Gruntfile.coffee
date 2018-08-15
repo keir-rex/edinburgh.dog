@@ -1,5 +1,3 @@
-#global module:false
-
 "use strict"
 
 module.exports = (grunt) ->
@@ -19,45 +17,62 @@ module.exports = (grunt) ->
           src: "jquery.min.js"
           dest: "3rdparty/js/"
         }]
-      bootstrap:
+      eventEmitter:
         files: [{
           expand: true
-          cwd: "bower_components/bootstrap/dist/css/"
-          src: "bootstrap.min.css"
-          dest: "3rdparty/css/"
-        },
-        {
-          expand: true
-          cwd: "bower_components/bootstrap/dist/js/"
-          src: "bootstrap.min.js"
+          cwd: "bower_components/eventEmitter/"
+          src: "EventEmitter.js"
           dest: "3rdparty/js/"
         }]
-      tether:
+      eventie:
         files: [{
           expand: true
-          cwd: "bower_components/tether/dist/css/"
-          src: "tether.min.css"
-          dest: "3rdparty/css/"
-        },
-        {
-          expand: true
-          cwd: "bower_components/tether/dist/js/"
-          src: "tether.min.js"
+          cwd: "bower_components/eventie/"
+          src: "eventie.js"
           dest: "3rdparty/js/"
         }]
-      font_awesome:
+      imagesloaded:
         files: [{
           expand: true
-          cwd: "bower_components/font-awesome/css/"
-          src: "font-awesome.min.css"
-          dest: "3rdparty/css/"
-        },{
+          cwd: "bower_components/imagesloaded/"
+          src: "imagesloaded.js"
+          dest: "3rdparty/js/"
+        }]
+      enquire:
+        files: [{
           expand: true
-          cwd: "bower_components/font-awesome/fonts/"
+          cwd: "bower_components/enquire/dist/"
+          src: "enquire.min.js"
+          dest: "3rdparty/js/"
+        }]
+      skrollr:
+        files: [{
+          expand: true
+          cwd: "bower_components/skrollr/dist/"
+          src: "skrollr.min.js"
+          dest: "3rdparty/js/"
+        }]
+      modernizr:
+        files: [{
+          expand: true
+          cwd: "bower_components/modernizr/"
+          src: "modernizr.js"
+          dest: "3rdparty/js/"
+        }]
+      normalize:
+        files: [{
+          expand: true
+          cwd: "bower_components/normalize.css/"
+          src: "normalize.css"
+          dest: "3rdparty/css/"
+        }]
+      favicons:
+        files: [{
+          expand: true
+          cwd: "favicons/"
           src: "*"
-          dest: "3rdparty/fonts/"
+          dest: "_site/"
         }]
-
     exec:
       jekyll:
         cmd: "jekyll build --trace"
@@ -88,9 +103,11 @@ module.exports = (grunt) ->
           base: '_site'
           livereload: true
 
+
   grunt.registerTask "build", [
     "copy"
     "exec:jekyll"
+    "copy:favicons"
   ]
 
   grunt.registerTask "serve", [
