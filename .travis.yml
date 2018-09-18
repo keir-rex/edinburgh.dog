@@ -1,12 +1,19 @@
 language: ruby
-branches:
-  only: master
 install:
   - bundle install
   - npm install -g bower grunt
   - npm install
   - bower install
-script: bundle exec rake build
+jobs:
+  include:
+    - stage: test
+      script: bundle exec rake build
+    - stage: deploy
+      script:  bundle exec rake deploy
+stages:
+  - test
+  - deploy
+    if: branch = master
 cache: bundler
 env:
   global: 
