@@ -13,7 +13,7 @@ jobs:
 stages:
   - test
   - name: deploy
-    if: branch = master
+    if: (NOT type IN (pull_request)) AND (branch = master)
 cache: bundler
 env:
   global: 
