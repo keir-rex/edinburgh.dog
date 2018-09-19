@@ -12,8 +12,8 @@ jobs:
       script: bundle exec rake deploy
 stages:
   - test
-  # - name: deploy
-  #   if: branch = master
+  - name: deploy
+    if: (NOT type IN (pull_request)) AND (branch = master)
 cache: bundler
 env:
   global: 
